@@ -25,7 +25,7 @@ SlimString& SlimString::append(const char* s)
 SlimString& SlimString::append(char* s)
 {
     if (s) {
-        size_t len1 = 1; // Initialisierung fuer den Fall, dass m_pStr == NULL
+        size_t len1 = 1; // initialize in case that m_pStr == NULL
         const size_t len2 = strlen(s) + 1;
         char* tmp;
         if (m_pStr) {
